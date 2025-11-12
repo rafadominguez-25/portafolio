@@ -1,0 +1,351 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.profile-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+}
+
+.profile-header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: #2c3e50;
+}
+
+.subtitle {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    color: #7f8c8d;
+}
+
+.description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+.linkedin-btn {
+    background-color: #0077b5;
+    color: #fff;
+}
+
+.linkedin-btn:hover {
+    background-color: #005f99;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.projects-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e0f2f7;
+    color: #2196f3;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+/* Estilos para las imágenes de los proyectos */
+.project-image {
+    width: 100%; /* La imagen ocupará el ancho completo de la tarjeta */
+    height: 180px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen para que quepa sin distorsionarse */
+    border-radius: 6px; /* Bordes ligeramente redondeados */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Sombra sutil */
+}
+/* --- Estilos para la nueva sección de Aptitudes e Idiomas --- */
+
+.skills-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* Espacio para separarlo de los proyectos */
+}
+
+.skills-section h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.skills-section h3 {
+    font-size: 1.4em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* Contenedor para las dos columnas */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Para que en pantallas pequeñas se ponga una sobre otra */
+    gap: 30px; /* Espacio entre las columnas */
+}
+
+/* Las dos columnas */
+.skills-list,
+.languages-list {
+    flex: 1; /* Hace que ambas columnas compartan el espacio */
+    min-width: 280px; /* Ancho mínimo antes de que se reorganicen */
+}
+
+/* Estilo de la lista de aptitudes */
+.skills-list ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding-left: 0;
+}
+
+.skills-list li {
+    font-size: 1.05em;
+    color: #555;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Estilo de la lista de idiomas */
+.language-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+.language-name {
+    font-weight: 600;
+    color: #555;
+}
+
+.proficiency-circles {
+    display: flex;
+}
+
+/* Los círculos de nivel */
+.circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #e0e0e0; /* Color del círculo vacío */
+    margin-left: 5px;
+}
+
+.circle.filled {
+    background-color: #007bff; /* Color del círculo lleno (azul) */
+}
+
+/* --- Estilos para la nueva sección de Programas --- */
+
+.software-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* Espacio para separarlo de la sección de arriba */
+}
+
+.software-section h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Contenedor para las dos columnas de software */
+.software-container {
+    display: flex;
+    flex-wrap: wrap; /* Para que en pantallas pequeñas se ponga una sobre otra */
+    gap: 30px; /* Espacio entre las columnas */
+}
+
+/* Las dos columnas de software */
+.software-column {
+    flex: 1; /* Hace que ambas columnas compartan el espacio */
+    min-width: 280px; /* Ancho mínimo antes de que se reorganicen */
+}
+
+/* --- Estilos para la nueva sección de Educación --- */
+
+.education-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Para separarlo de la sección de Proyectos */
+}
+
+.education-section h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Contenedor de cada item de educación (logo + texto) */
+.education-item {
+    display: flex;
+    align-items: flex-start; /* Alinea logo y texto por la parte de arriba */
+    margin-bottom: 25px;
+}
+
+/* Quita el margen de abajo al último item */
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilo del logo */
+.education-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; /* Asegura que el logo se vea bien sin estirarse */
+    margin-right: 20px;
+    flex-shrink: 0; /* Evita que el logo se encoja */
+    border: 1px solid #f0f0f0; /* Un borde sutil */
+    border-radius: 6px;
+}
+
+/* Contenedor para los textos */
+.education-details {
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+/* Título de la institución */
+.education-title {
+    margin: 0;
+    font-size: 1.3em;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+/* Estilo para la carrera (Mechanical Engineering) */
+.education-degree {
+    margin: 0 0 8px 0;
+    font-size: 1.1em;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Texto de actividades (letra más pequeña) */
+.education-activities {
+    margin: 0;
+    font-size: 0.95em;
+    color: #777;
+    line-height: 1.5;
+}
+
+.education-activities strong {
+    color: #555; /* Hace "Actividades y grupos:" un poco más oscuro */
+}
